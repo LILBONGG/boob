@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1660970387-g6xq3Zxb" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "สวัสดีค่ะ",
+                    contents: 
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "size": "full",
+        "url": "https://cdn.discordapp.com/attachments/1094534015408668672/1100066375126495323/168pg.jpg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "❤️เครดิตฟรี 30❤️",
+            "color": "#ffffff",
+            "size": "lg",
+            "weight": "bold",
+            "align": "center",
+            "decoration": "none",
+            "margin": "sm"
+          },
+          {
+            "type": "text",
+            "text": "ทำ400 ถอนได้ 30",
+            "align": "center",
+            "color": "#ffffff"
+          }
+        ],
+        "borderWidth": "none",
+        "borderColor": "#ffffff",
+        "cornerRadius": "xxl",
+        "spacing": "none",
+        "margin": "md"
+      }
+    ],
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#000000",
+      "endColor": "#000000",
+      "centerColor": "#0048ff"
+    },
+    "cornerRadius": "xxl",
+    "borderWidth": "bold",
+    "borderColor": "#ffffff",
+    "paddingBottom": "none",
+    "paddingStart": "md",
+    "paddingEnd": "md"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "รับเครดิตฟรี 30",
+            "weight": "bold",
+            "align": "center",
+            "color": "#ffffff",
+            "size": "lg",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://lin.ee/DNhIreE"
+            }
+          }
+        ],
+        "backgroundColor": "#3f67ca",
+        "spacing": "none",
+        "margin": "none",
+        "cornerRadius": "md",
+        "width": "250px",
+        "height": "50px",
+        "offsetTop": "none",
+        "paddingAll": "lg",
+        "offsetEnd": "none",
+        "offsetStart": "15px",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://lin.ee/DNhIreE"
+        }
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "สมัครสมาชิก",
+            "size": "lg",
+            "color": "#ffffff",
+            "weight": "bold",
+            "align": "center",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://bit.ly/3L2DDGH"
+            }
+          }
+        ],
+        "backgroundColor": "#2c58c9",
+        "spacing": "none",
+        "margin": "md",
+        "width": "250px",
+        "height": "50px",
+        "offsetStart": "15px",
+        "cornerRadius": "md",
+        "paddingAll": "lg",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://bit.ly/3L2DDGH"
+        }
+      }
+    ]
+  }
+} 
+
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
